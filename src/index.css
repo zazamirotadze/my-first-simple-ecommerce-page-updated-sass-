@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.card-conteiner{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:1em;
+  margin-top: 1em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img{
+  width: 50%;
+  height: 50%
+
+}
+
+.card{
+  
+  text-align: center;
+  padding-top: 2em;
+  border-radius: 3%;
+  border:none;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.numberOfItems{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.2em;
+  border-radius: 50%;
+  margin-left: 0.1em;
+  border: 2px read solid;
+}
+
+
+.nav-component{
+  border: black solid 2px;
+  padding: 2em;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.menu-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  margin-top: 3em;
+  
+}
+button{
+  color: white;
+  padding: 1em;
+  border-radius: 5%;
+  border:none;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.books-btn{
+  background-color: blue;
+}
+
+button:active {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.payment-btn{
+  background-color: rgb(105, 70, 3);
+}
+
+.remove-btn{
+  background-color: red;
+  padding: 0.5em;
+}
+.clss-for-cart{
+  margin-top: 0.4em;
+}
+
+h1{
+  font-weight: bolder;
+  letter-spacing: .15em;
+  background: #FFFFFF;
+  text-shadow: 2px 2px 0px grey, 5px 4px 0px rgba(0,0,0,0.15);
 }
