@@ -8,20 +8,23 @@ const Nav = ({numberOfItems, fullSum, setNumberOfItems, setCartItems, setFullSum
         setFullSum(0)
     }
   return (
-    <div className='nav-component'>
+    <div className='nav'>
         <h1>შეიძინე წიგნები ჩვენთან</h1>
-        <div className='menu-div'>
-        <Link to="/" style={{width: "3em"}} ><button  className="books-btn">წიგნები</button></Link>
+        <div className='nav__menu-div'>
+           <div className='nav__books-btn-div'>
+                <Link to="/" style={{width: "3em"}} ><button  className="nav__books-btn">წიგნები</button></Link>
+            </div> 
         
-        <Link to="/cart"  style={{width: "3.5em"}  }> 
-            <div className='clss-for-cart'>
-                <i className='fa fa-shopping-cart' style={{fontSize: "2em"}}/>
-                <span className='numberOfItems'>{numberOfItems}</span>
+            <div className='nav__cart-icon-div'>
+                <Link to="/cart"  style={{width: "3.5em"}  }> 
+                        <i className='fa fa-shopping-cart nav__cart-icon' />
+                </Link>
+                <div className='nav__numberOfItems'><p>{numberOfItems}</p></div>
             </div>
-        </Link>
-       
-            <p> გადასახდელი ჯამური თანხა: {fullSum} ₾</p>
-            <button onClick={sendPayment} className="payment-btn">გადახდა</button>
+            <div className='nav__payment-div'>
+                <p> გადასახდელი ჯამური თანხა: {fullSum} ₾</p>
+                <button onClick={sendPayment} className="nav__payment-btn">გადახდა</button>
+            </div>
         </div>
     </div>
   )

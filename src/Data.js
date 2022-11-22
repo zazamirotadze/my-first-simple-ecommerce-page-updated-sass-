@@ -1,21 +1,24 @@
+
+
+
 const Data = 
     [
         {
             id:1,
-            name: "თხის რქა",
-            img: "https://shop.aversi.ge/images/detailed/27/3503778549.webp",
+            name: "booo x",
+            img: "/static/media/blank-notepad-4-1244263.d21c9a5eac72816cdcca.jpg",
             price: 20
         },
         {
             id:2,
-            name: "სიმართლეს როდესაც დაიცავ",
-            img: "https://scontent.ftbs1-2.fna.fbcdn.net/v/t1.6435-9/145912859_1352901268396444_8640126511698616363_n.jpg?stp=cp0_dst-jpg_e15_q65_s320x320&_nc_cat=105&ccb=1-7&_nc_sid=8024bb&_nc_ohc=-2TygZXmwqcAX-JfPC4&_nc_ht=scontent.ftbs1-2.fna&oh=00_AT8NkwH_y2mZ6Gw8KxUYb6KBQGV20t3i6K_WhDSI9b0SeQ&oe=6364C39F",
+            name: "Booook y",
+            img: "static/media/my-address-book-icon-1142969.c4fabc608ebf06c58207.jpg",
             price: 120
         },
         {
             id:3,
-            name: "თავადი მიროტაძეები",
-            img: "https://scontent.ftbs1-1.fna.fbcdn.net/v/t1.6435-9/179060631_2830795737174556_4020346594488947290_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=KSGb_4TGDqAAX8v-OBI&_nc_ht=scontent.ftbs1-1.fna&oh=00_AT_jPWH9IwucgimfvKlH62jicDwR8dRzZZpFv47e0jFCWg&oe=6365B8C2",
+            name: "Boooookky Z",
+            img: "/static/media/paper-pen-color-1634002.72a960f92637b6b94e36.jpg", 
             price: 90
         }
     ]

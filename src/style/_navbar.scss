@@ -1,0 +1,51 @@
+@import "./colors";
+
+.nav{
+    padding: 2em;
+    box-shadow: $shadow;
+    &__payment-div{
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__books-btn-div{
+      width: 80px;
+    }
+    &__cart-icon-div{
+      display: flex;
+      align-items: center;
+      width: 90px;
+    }
+    &__menu-div{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3em;
+    }
+    &__numberOfItems{
+      background-color: black;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 15px;
+      & p{
+          margin-top: 3px;
+      }
+    }
+    &__cart-icon{
+      color: $color-blue;
+      font-size: 32px;
+      margin-left: 19px;
+    }
+    &__books-btn{
+      background-color: $color-blue;
+    }
+    &__payment-btn{
+      background-color: darken($color: $color-red , $amount: 28) ;
+    }
+  }
+

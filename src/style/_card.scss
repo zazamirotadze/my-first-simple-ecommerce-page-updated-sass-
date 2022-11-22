@@ -1,0 +1,29 @@
+@import "./colors";
+
+
+.card-conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:1em;
+    margin-top: 1em;
+    padding: 10px;
+  }
+
+  .card{
+    text-align: center;
+    padding-top: 2em;
+    border-radius: 3%;
+    border:none;
+    box-shadow:  $shadow;
+    & h4 {
+      font-size: 2vw;
+    }
+    & p {
+      font-size: 2vw;
+    }
+  }
+
+  img{
+    width: 50%;
+    height: 50%
+  }

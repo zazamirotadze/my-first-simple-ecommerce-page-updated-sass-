@@ -2,8 +2,6 @@ import React from 'react'
 
 const Card = ({book, handleClick}) => {
 
-
-    
    
   return (
     <div className='card' onClick={() => handleClick(book)} style={{cursor:"pointer"}} >
@@ -15,3 +13,5 @@ const Card = ({book, handleClick}) => {
 }
 
 export default Card
+
+//

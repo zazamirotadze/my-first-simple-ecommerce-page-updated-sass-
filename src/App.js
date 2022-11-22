@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Cart from "./Cart";
 import { useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
+
 function App() {
   const [cartItems, setCartItems] = useState([])
   const [numberOfItems, setNumberOfItems] = useState(0)
@@ -46,7 +47,6 @@ function App() {
       }/>
       <Route path="/Cart" element={<div className="card-conteiner"><Cart cartItems={cartItems} removeItem = {removeItem}/></div>}/>
     </Routes>
-
     </>
   );
 }
