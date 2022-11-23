@@ -19,4 +19,8 @@ button{
     background-color: $color-red;
     padding: 5px 20px;
     font-size: 1.3vw;
+    &:hover{
+      transform: scale(1.1) skewX(3deg);
+      
+    }
   }

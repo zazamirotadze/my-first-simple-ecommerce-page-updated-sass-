@@ -10,16 +10,24 @@
   }
 
   .card{
+    background-color: $color-white;
     text-align: center;
     padding-top: 2em;
     border-radius: 3%;
     border:none;
     box-shadow:  $shadow;
+    transition: all .4s;
+    
     & h4 {
       font-size: 2vw;
     }
     & p {
       font-size: 2vw;
+    }
+    &:hover{
+      box-shadow: $hoveredShadow ;
+      transform:  scale(1.2);
+      
     }
   }
 
