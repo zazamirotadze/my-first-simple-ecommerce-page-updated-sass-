@@ -1,28 +1,55 @@
 @import "./colors";
+@import "./media";
 
 
 .card-conteiner{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap:1em;
-    margin-top: 1em;
-    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin-top: 1rem;
+    font-size: 1em;
+   
+    gap: 2em;
+    @include respond(tab-land){
+      font-size: 0.7em;
+      
+    }
+    @include respond(tab-port){
+      font-size: 0.6em;
+    }
+    @include respond(phone){
+      
+      width: 90%;
+      font-size: 0.6em;
+      grid-template-columns: 1fr  ;
+      grid-template-rows: 1fr 1fr ;
+      grid-template-rows: gap 1rem;
+ 
+    }
+
   }
 
   .card{
-    background-color: $color-white;
+    
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding-top: 2em;
-    border-radius: 3%;
+    background-color: $color-white;
+    border-radius: 0.5em;
     border:none;
     box-shadow:  $shadow;
     transition: all .4s;
+    margin-left: 2em;
+    
+
     
     & h4 {
-      font-size: 2vw;
+      font-size: 4em;
     }
     & p {
-      font-size: 2vw;
+      font-size: 3em;
     }
     &:hover{
       box-shadow: $hoveredShadow ;
@@ -33,5 +60,5 @@
 
   img{
     width: 50%;
-    height: 50%
+    height: 50%;
   }
