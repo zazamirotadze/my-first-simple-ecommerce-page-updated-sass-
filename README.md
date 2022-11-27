@@ -1,2 +1,1 @@
-this is my first simple books ecommerce page. ეს ჩემი პირველი მარტივი ინტერნეტ გაყიდვების წიგნის გვერდია
-live link (ლაივის ლინკი) - https://remarkable-licorice-c1781b.netlify.app/
+this is an updated version of the page. Here I have used sass animations and media queries. ეს გვერდის განახლებული ვერსიაა. აქ მე გამოვიყენე საასი ანიმაციები და მედია მოთხოვნები. live link (ლაივის ლინკი) - https://zingy-malasada-995599.netlify.app/

@@ -68,12 +68,19 @@
       }
     }
     &__cart-icon{
-   
-      color: $color-blue;
       font-size: 3.2rem;
       &:hover,&:active{
         animation-duration: 1s;
         animation-name: positionChanger;
+      }
+      & i {
+        color: $color-blue;
+        &:hover {
+          color: lighten($color:  $color-blue, $amount: 10);
+        }
+        &:active {
+          color: lighten($color:  $color-blue, $amount: 30);
+        }
       }
     }
     &__books-btn{
@@ -95,7 +102,7 @@
         position: absolute;
         top:0;
         left: 0;
-        padding: 1.4rem;
+        padding: 1.1rem;
         background-color: lighten($color: $color-red, $amount: 10);
         clip-path: polygon(3% 3%, 100% 3%, 69% 27%, 98% 45%, 64% 61%, 100% 93%, 2% 94%, 29% 59%, 3% 43%, 29% 26%);
       }

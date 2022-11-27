@@ -1,7 +1,7 @@
 @import "./colors";
 button{
     color: white;
-    padding: 1em;
+    padding: 1rem;
     border-radius: 5%;
     border:none;
     font-weight: bold;
@@ -17,8 +17,7 @@ button{
   
   .remove-btn{
     background-color: $color-red;
-    padding: 5px 20px;
-    font-size: 1.3vw;
+    font-size: 2rem;
     &:hover{
       transform: scale(1.1) skewX(3deg);
       

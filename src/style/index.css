@@ -133,7 +133,6 @@
   margin-top: 0.3rem;
 }
 .nav__cart-icon {
-  color: rgb(77, 77, 201);
   font-size: 3.2rem;
 }
 .nav__cart-icon:hover, .nav__cart-icon:active {
@@ -141,6 +140,15 @@
           animation-duration: 1s;
   -webkit-animation-name: positionChanger;
           animation-name: positionChanger;
+}
+.nav__cart-icon i {
+  color: rgb(77, 77, 201);
+}
+.nav__cart-icon i:hover {
+  color: #7474d5;
+}
+.nav__cart-icon i:active {
+  color: #c2c2ed;
 }
 .nav__books-btn {
   transition: all 0.4s;
@@ -161,7 +169,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 1.4rem;
+  padding: 1.1rem;
   background-color: #fb4141;
   -webkit-clip-path: polygon(3% 3%, 100% 3%, 69% 27%, 98% 45%, 64% 61%, 100% 93%, 2% 94%, 29% 59%, 3% 43%, 29% 26%);
           clip-path: polygon(3% 3%, 100% 3%, 69% 27%, 98% 45%, 64% 61%, 100% 93%, 2% 94%, 29% 59%, 3% 43%, 29% 26%);
@@ -182,6 +190,11 @@
 html {
   font-size: 10px;
 }
+@media (max-width: 37.5em) {
+  html {
+    font-size: 8px;
+  }
+}
 
 h1 {
   font-size: 4rem;
@@ -191,18 +204,18 @@ h1 {
 }
 @media (max-width: 56.25em) {
   h1 {
-    font-size: 3.7rem;
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 37.5em) {
   h1 {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
 }
 
 button {
   color: white;
-  padding: 1em;
+  padding: 1rem;
   border-radius: 5%;
   border: none;
   font-weight: bold;
@@ -214,8 +227,7 @@ button:active {
 
 .remove-btn {
   background-color: rgb(250, 15, 15);
-  padding: 5px 20px;
-  font-size: 1.3vw;
+  font-size: 2rem;
 }
 .remove-btn:hover {
   transform: scale(1.1) skewX(3deg);
@@ -223,50 +235,32 @@ button:active {
 
 .card-conteiner {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 1rem;
-  font-size: 1em;
-  gap: 2em;
-}
-@media (max-width: 75em) {
-  .card-conteiner {
-    font-size: 0.7em;
-  }
-}
-@media (max-width: 56.25em) {
-  .card-conteiner {
-    font-size: 0.6em;
-  }
-}
-@media (max-width: 37.5em) {
-  .card-conteiner {
-    width: 90%;
-    font-size: 0.6em;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-rows: gap 1rem;
-  }
+  grid-template-columns: repeat(auto-fit, 30rem);
+  grid-auto-rows: 30rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .card {
-  width: 30em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: rgb(250, 244, 244);
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   transition: all 0.4s;
-  margin-left: 2em;
 }
 .card h4 {
-  font-size: 4em;
+  font-size: 4rem;
 }
 .card p {
-  font-size: 3em;
+  font-size: 3rem;
 }
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 40px, rgba(0, 0, 0, 0.3) 0px 70px 130px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
