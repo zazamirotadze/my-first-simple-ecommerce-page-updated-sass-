@@ -189,6 +189,8 @@
 
 html {
   font-size: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 @media (max-width: 37.5em) {
   html {

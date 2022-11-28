@@ -9,6 +9,8 @@
 
 html{
     font-size: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
     @include respond(phone){
         font-size: 8px;
       }
